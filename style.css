@@ -1,0 +1,117 @@
+body{
+    background:black;
+}
+
+#head{
+    text-align: center;
+    color: rgb(193, 248, 230);
+}
+
+label{
+    display: block;
+    
+}
+
+.field-padding{
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(225, 239, 252);
+    position: relative;
+}
+
+
+
+
+.field-padding small{
+    color: rgb(243, 78, 78);
+    display: block;
+    margin-left: 15px;
+    margin-top: 6px;
+    font-size: 13px;
+    visibility: hidden;
+}
+
+
+
+
+.field-padding.success #validate{
+    visibility: visible;
+}
+.field-padding.success input{
+    border-color: green;
+}
+
+
+.field-padding.error small{
+    visibility: visible;
+}
+.field-padding.error #Error{
+    visibility: visible;
+}
+.field-padding.error input{
+    border-color: red;
+}
+
+
+.field-padding #validate{
+    position: absolute;
+    display:inline-block;
+    left: 78%;
+    top: 42.5%;
+    visibility: hidden;
+}
+.field-padding #Error{
+    position: absolute;
+    display:inline-block;
+    left: 78%;
+    top: 42.5%;
+    visibility: hidden;
+}
+
+
+#form{
+    border: 1px solid white;
+    width: 45%;
+    margin: auto;
+    margin-bottom: 250px;
+
+}
+
+input[type=text],input[type=number],input[type=password]{
+    height: 30px;
+    width: 80%;
+    margin-top: 7px;
+    margin-left: 5px;
+    border-radius: 15px;
+    display: block;
+}
+
+input[type=text],input[type=password],input[type=number]{
+    padding-left: 10px;
+    /* border-color: rgb(240, 114, 114); */
+    outline:none;
+}
+
+
+
+#submit-btn{
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    cursor: pointer;
+    /* border: none; */
+    outline: none;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+#submit-btn:hover{
+    color: blue;
+    border-color: BLUE;
+}
+
